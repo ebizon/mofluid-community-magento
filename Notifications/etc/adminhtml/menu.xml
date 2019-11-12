@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Mofluid. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Mofluid_Notifications::mofluid_notifications" title=" Notifications" module="Mofluid_Notifications" parent="mofluid_payment::base" sortOrder="30" dependsOnModule="Mofluid_Notifications" resource="Mofluid_Notifications::sample"/>
+		
+		<add id="mofluid_notifications::mofluid_IOS_notifications" title="IOS  Notifications" module="Mofluid_Notifications" parent="Mofluid_Notifications::mofluid_notifications" sortOrder="20" dependsOnModule="Mofluid_Notifications" action="mofluid_notifications/items/edit/id/1" resource="Mofluid_Notifications::items"/>
+		
+		<add id="mofluid_notifications::mofluid_Android_notifications" title="Android Notifications" module="Mofluid_Notifications" parent="Mofluid_Notifications::mofluid_notifications" sortOrder="20" dependsOnModule="Mofluid_Notifications" action="mofluid_notifications/items/edit/id/2" resource="Mofluid_Notifications::items"/>
+    </menu>
+</config>
+
+

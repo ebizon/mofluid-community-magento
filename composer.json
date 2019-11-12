@@ -1,0 +1,30 @@
+    
+
+  {
+  "name": "mofluid/mofluid",
+  "description": "Plugin for Mofluid app",
+  "type": "magento2-module",
+  "version": "0.0.0",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "require": {
+    "php": "~5.5.0|~5.6.0|~7.0.0",
+    "magento/framework": "~100.0.4"
+  },
+  "authors": [
+    {
+      "name": "saddam hussain",
+      "email": "saddam.hussain@ebizontek.com",
+      "homepage": "https://store2.mofluid.com/",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "Vendor\\Module\\": ""
+    }
+  }
+}

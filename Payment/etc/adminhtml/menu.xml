@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Mofluid. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+		<add id="mofluid_payment::base" title="Mofluid" module="Mofluid_Payment" sortOrder="90" resource="Mofluid_Payment::sample"/>
+		
+        <add id="Mofluid_Payment::mofluid_payment" title="Payment Configuration" module="Mofluid_Payment" parent="mofluid_payment::base"  sortOrder="20" resource="Mofluid_Payment::sample" dependsOnModule="Mofluid_Payment"/>
+        
+        <add id="Mofluid_Payment::mofluid_cashondelivery" title="Cash On Delivery" module="Mofluid_Payment" parent="Mofluid_Payment::mofluid_payment" sortOrder="20" dependsOnModule="Mofluid_Payment" action="payment/payment/edit/id/1" resource="Mofluid_Payment::mofluid_payment_index"/>
+        
+        <add id="Mofluid_Payment::mofluid_authorizenet" title="Authorize.Net" module="Mofluid_Payment" parent="Mofluid_Payment::mofluid_payment" sortOrder="20" dependsOnModule="Mofluid_Payment" action="payment/payment/edit/id/2" resource="Mofluid_Payment::mofluid_payment_index"/>
+        
+        <add id="Mofluid_Payment::mofluid_paypal_standard" title="Paypal Standard" module="Mofluid_Payment" parent="Mofluid_Payment::mofluid_payment" sortOrder="20" dependsOnModule="Mofluid_Payment" action="payment/payment/edit/id/3" resource="Mofluid_Payment::mofluid_payment_index"/>
+        
+        <add id="Mofluid_Payment::mofluid_banktransfer" title="Bank Transfer" module="Mofluid_Payment" parent="Mofluid_Payment::mofluid_payment" sortOrder="20" dependsOnModule="Mofluid_Payment" action="payment/payment/edit/id/4" resource="Mofluid_Payment::mofluid_payment_index"/>
+        <add id="Mofluid_Payment::mofluid_braintree" title="Brain Tree" module="Mofluid_Payment" parent="Mofluid_Payment::mofluid_payment" sortOrder="20" dependsOnModule="Mofluid_Payment" action="payment/payment/edit/id/6" resource="Mofluid_Payment::mofluid_payment_index"/>
+        <add id="Mofluid_Payment::mofluid_stripe" title="Stripe" module="Mofluid_Payment" parent="Mofluid_Payment::mofluid_payment" sortOrder="20" dependsOnModule="Mofluid_Payment" action="payment/payment/edit/id/9" resource="Mofluid_Payment::mofluid_payment_index"/>
+         <add id="Mofluid_Payment::mofluid_paypal_express" title="Paypal Express" module="Mofluid_Payment" parent="Mofluid_Payment::mofluid_payment" sortOrder="20" dependsOnModule="Mofluid_Payment" action="payment/payment/edit/id/10" resource="Mofluid_Payment::mofluid_payment_index"/>
+<!--AddMenu-->
+    </menu>
+</config>

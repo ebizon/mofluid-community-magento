@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Push-notifications. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Push-notifications_MofluidPushNotifications::push-notifications_pushnotificationsindex" title="MofluidPush" module="Push-notifications_MofluidPushNotifications"  sortOrder="20" dependsOnModule="Push-notifications_MofluidPushNotifications" action="mofluidpushnotifications/pushnotifications/index" resource="Push-notifications_MofluidPushNotifications::push-notifications_pushnotificationsindex"/>
+<!--AddMenu-->
+    </menu>
+</config>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Mofluid. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+		<add id="Mofluid_Mofluidapi2::mofluid_theme" title="Theme Configuration" module="Mofluid_Mofluidapi2" parent="mofluid_payment::base" sortOrder="30" dependsOnModule="Mofluid_Mofluidapi2" resource="Mofluid_Mofluidapi2::sample"/>
+		
+        <add id="Mofluid_Mofluidapi2::mofluid_banner_index" title="Banner List" module="Mofluid_Mofluidapi2" parent="Mofluid_Mofluidapi2::mofluid_theme" sortOrder="20" dependsOnModule="Mofluid_Mofluidapi2" action="mofluidapi2/banner/index" resource="Mofluid_Mofluidapi2::mofluid_banner_index"/>
+        
+        <add id="Mofluid_Mofluidapi2::mofluid_logo_edit" title="Configuration" module="Mofluid_Mofluidapi2" parent="Mofluid_Mofluidapi2::mofluid_theme" sortOrder="30" dependsOnModule="Mofluid_Mofluidapi2" action="mofluidapi2/logo/edit/id/2300001/" resource="Mofluid_Mofluidapi2::mofluid_logo_edit"/>
+        
+        
+        
+        
+<!--AddMenu-->
+    </menu>
+</config>
